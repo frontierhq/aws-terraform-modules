@@ -1,6 +1,6 @@
 # DB Instance
 
-This module creates a [DB Instance](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_instance) and an associated role [IAM Role](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role) for monitoring.
+This module creates a [DB Instance](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_instance) and an associated [IAM Role](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role) for monitoring.
 
 ## Usage
 
