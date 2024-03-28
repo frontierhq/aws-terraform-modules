@@ -1,6 +1,6 @@
 # Security Group
 
-This module creates a [Security Group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_instance).
+This module creates a [Security Group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group).
 
 ## Usage
 
