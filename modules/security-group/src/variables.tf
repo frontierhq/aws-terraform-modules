@@ -1,12 +1,13 @@
 variable "egress_rules" {
   type = list(object({
+    cidr_blocks     = optional(list(string))
     description     = optional(string)
     from_port       = number
-    to_port         = number
-    protocol        = string
-    cidr_blocks     = optional(list(string))
     prefix_list_ids = optional(list(string))
+    protocol        = string
+    security_groups = optional(list(string))
     self            = optional(bool)
+    to_port         = number
   }))
   default = []
 }
@@ -25,13 +26,14 @@ variable "identifier" {
 
 variable "ingress_rules" {
   type = list(object({
+    cidr_blocks     = optional(list(string))
     description     = optional(string)
     from_port       = number
-    to_port         = number
-    protocol        = string
-    cidr_blocks     = optional(list(string))
     prefix_list_ids = optional(list(string))
+    protocol        = string
+    security_groups = optional(list(string))
     self            = optional(bool)
+    to_port         = number
   }))
   default = []
 }

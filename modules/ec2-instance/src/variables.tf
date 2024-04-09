@@ -31,6 +31,11 @@ variable "environment" {
   type = string
 }
 
+variable "iam_instance_profile" {
+  type    = string
+  default = null
+}
+
 variable "identifier" {
   type = string
 }
@@ -41,7 +46,7 @@ variable "instance_type" {
 
 variable "monitoring" {
   type    = bool
-  default = false
+  default = true
 }
 
 variable "region" {
@@ -55,6 +60,11 @@ variable "subnet_id" {
 variable "tags" {
   type    = map(string)
   default = {}
+}
+
+variable "user_data" {
+  type    = string
+  default = ""
 }
 
 variable "vpc_security_group_ids" {
