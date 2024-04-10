@@ -18,7 +18,7 @@ variable "backup_retention_period" {
 
 variable "backup_window" {
   type    = string
-  default = "02:00-03:00"
+  default = "01:00-02:00"
 }
 
 variable "copy_tags_to_snapshot" {
@@ -100,6 +100,10 @@ variable "map_public_ip_on_launch" {
 variable "monitoring_interval" {
   type    = number
   default = 60
+}
+
+variable "monitoring_role_arn" {
+  type = string
 }
 
 variable "multi_az" {

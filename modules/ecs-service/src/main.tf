@@ -21,7 +21,7 @@ resource "aws_ecs_service" "main" {
     for_each = var.load_balancers
 
     content {
-      target_group_arn = load_balancer.value.arn
+      target_group_arn = load_balancer.value.target_group_arn
       container_name   = load_balancer.value.container_name
       container_port   = load_balancer.value.container_port
     }
@@ -36,9 +36,24 @@ resource "aws_ecs_service" "main" {
     }
   }
 
+  dynamic "service_registries" {
+    for_each = var.service_registry
+
+    content {
+      registry_arn = service_registries.value.registry_arn
+      port         = lookup(service_registries.value, "port", null)
+    }
+  }
+
+  lifecycle {
+    ignore_changes = [
+      desired_count
+    ]
+  }
+
   tags = merge(
     {
-      Name = "${var.zone}-${var.environment}-${local.identifier}-${lookup(local.short_regions, var.region)}-ecs"
+      Name = "${var.zone}-${var.environment}-${local.identifier}-${lookup(local.short_regions, var.region)}-ngw"
     },
     var.tags
   )

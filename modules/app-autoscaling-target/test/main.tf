@@ -2,7 +2,7 @@ provider "aws" {
   region = "eu-west-2"
 }
 
-module "db_instance" {
+module "app_autoscaling_target" {
   source = "../src"
 
   environment = "bar"

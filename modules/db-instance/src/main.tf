@@ -1,5 +1,5 @@
 resource "aws_db_instance" "main" {
-  identifier                   = "${var.zone}-${var.environment}-${lookup(local.short_regions, var.region)}-${local.identifier}-${lookup(local.db_engines, var.engine)}"
+  identifier                   = "${var.zone}-${var.environment}-${local.identifier}-${lookup(local.db_engines, var.engine)}"
   db_name                      = var.db_name
   engine                       = var.engine
   engine_version               = var.engine_version
@@ -24,42 +24,13 @@ resource "aws_db_instance" "main" {
   password                     = var.manage_master_user_password ? null : var.password
   apply_immediately            = var.apply_immediately
   monitoring_interval          = var.monitoring_interval
-  monitoring_role_arn          = aws_iam_role.main.arn
+  monitoring_role_arn          = var.monitoring_role_arn
   performance_insights_enabled = var.performance_insights_enabled
 
   tags = merge(
     {
-      Name = "${var.zone}-${var.environment}-${lookup(local.short_regions, var.region)}-${local.identifier}-${lookup(local.db_engines, var.engine)}"
+      Name = "${var.zone}-${var.environment}-${local.identifier}-${lookup(local.db_engines, var.engine)}-rds"
     },
     var.tags
   )
-}
-
-resource "aws_iam_role" "main" {
-  name = "${var.zone}-${var.environment}-${lookup(local.short_regions, var.region)}-${local.identifier}-role"
-
-  assume_role_policy = jsonencode({
-    Version = "2012-10-17",
-    Statement = [
-      {
-        Action = "sts:AssumeRole",
-        Effect = "Allow",
-        Principal = {
-          Service = "monitoring.rds.amazonaws.com"
-        }
-      }
-    ]
-  })
-
-  tags = merge(
-    {
-      Name = "${var.zone}-${var.environment}-${lookup(local.short_regions, var.region)}-${local.identifier}-role"
-    },
-  var.tags)
-}
-
-resource "aws_iam_policy_attachment" "main" {
-  name       = "rds-monitoring"
-  roles      = [aws_iam_role.main.name]
-  policy_arn = "arn:aws:iam::aws:policy/service-role/AmazonRDSEnhancedMonitoringRole"
 }

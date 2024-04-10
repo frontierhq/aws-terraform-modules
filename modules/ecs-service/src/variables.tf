@@ -36,9 +36,9 @@ variable "launch_type" {
 
 variable "load_balancers" {
   type = list(object({
-    arn            = string
-    container_name = string
-    container_port = number
+    target_group_arn = string
+    container_name   = string
+    container_port   = number
   }))
   default = []
 }
@@ -64,6 +64,11 @@ variable "rollback" {
 
 variable "security_groups" {
   type    = list(string)
+  default = []
+}
+
+variable "service_registry" {
+  type    = list(map(string))
   default = []
 }
 

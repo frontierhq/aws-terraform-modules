@@ -13,6 +13,7 @@ module "db_instance" {
   kms_key_id              = "foo"
   backup_retention_period = 10
   db_subnet_group_name    = "foogrp"
+  monitoring_role_arn     = "arn"
   vpc_security_group_ids  = ["foobar"]
   username                = "barbat"
 

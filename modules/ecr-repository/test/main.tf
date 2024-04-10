@@ -10,8 +10,6 @@ module "ecr_repository" {
   region      = "eu-west-2"
   zone        = "bat"
 
-  identifiers = ["foo"]
-
   tags = {
     Foo = "Bar"
   }

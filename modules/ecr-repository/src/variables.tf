@@ -1,18 +1,3 @@
-variable "actions" {
-  type = list(string)
-  default = [
-    "ecr:GetDownloadUrlForLayer",
-    "ecr:BatchGetImage",
-    "ecr:BatchCheckLayerAvailability",
-    "ecr:PutImage",
-    "ecr:InitiateLayerUpload",
-    "ecr:UploadLayerPart",
-    "ecr:CompleteLayerUpload",
-    "ecr:DescribeRepositories",
-    "ecr:ListImages",
-  ]
-}
-
 variable "encryption_type" {
   type    = string
   default = "AES256"
@@ -29,10 +14,6 @@ variable "force_delete" {
 
 variable "identifier" {
   type = string
-}
-
-variable "identifiers" {
-  type = list(string)
 }
 
 variable "image_tag_mutability" {

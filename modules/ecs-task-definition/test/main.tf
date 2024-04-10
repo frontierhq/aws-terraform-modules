@@ -2,7 +2,7 @@ provider "aws" {
   region = "eu-west-2"
 }
 
-module "aws_ecs_task_definition" {
+module "ecs_task_definition" {
   source = "../src"
 
   environment = "bar"
