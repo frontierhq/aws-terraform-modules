@@ -1,6 +1,6 @@
 # App Autoscaling Target
 
-This module creates a [App Autoscaling Target](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/appautoscaling_target).
+This module creates an [App Autoscaling Target](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/appautoscaling_target).
 
 ## Usage
 

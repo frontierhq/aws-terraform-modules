@@ -1,6 +1,6 @@
 # ECS Task Definition
 
-This module creates a [ECS Task Definition](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecs_task_definition).
+This module creates an [ECS Task Definition](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecs_task_definition).
 
 ## Usage
 

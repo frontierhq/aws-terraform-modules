@@ -1,6 +1,6 @@
 # EC2 Instance
 
-This module creates a [EC2 Instance](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance).
+This module creates an [EC2 Instance](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance).
 
 ## Usage
 
