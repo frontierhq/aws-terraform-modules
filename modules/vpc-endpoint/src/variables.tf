@@ -16,6 +16,11 @@ variable "policy" {
   default = null
 }
 
+variable "private_dns_enabled" {
+  type    = bool
+  default = false
+}
+
 variable "private_ip" {
   type    = string
   default = null
@@ -26,7 +31,8 @@ variable "region" {
 }
 
 variable "route_table_ids" {
-  type = list(string)
+  type    = list(string)
+  default = []
 }
 
 variable "security_group_ids" {
@@ -36,6 +42,11 @@ variable "security_group_ids" {
 
 variable "service_name" {
   type = string
+}
+
+variable "subnet_ids" {
+  type    = list(string)
+  default = []
 }
 
 variable "tags" {

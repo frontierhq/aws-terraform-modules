@@ -10,9 +10,8 @@ module "vpc_endpoint" {
   region      = "eu-west-2"
   zone        = "bat"
 
-  route_table_ids = ["foo"]
-  service_name    = "foobar"
-  vpc_id          = "id"
+  service_name = "foo"
+  vpc_id       = "id"
 
   tags = {
     Foo = "Bar"
