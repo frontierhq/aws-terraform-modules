@@ -6,7 +6,7 @@ This module creates a [Service Discovery Service](https://registry.terraform.io/
 
 ```hcl
 module "service_discovery_service" {
-  source = "https://github.com/gofrontier-com/aws-terraform-modules/releases/download/service_discovery_service/[VERSION]/module.tar.gz//src"
+  source = "https://github.com/frontierhq/aws-terraform-modules/releases/download/service_discovery_service/[VERSION]/module.tar.gz//src"
 
   name         = "nginx"
   namespace_id = aws_service_discovery_private_dns_namespace.main.id
@@ -21,4 +21,4 @@ module "service_discovery_service" {
 
 ## Contributing
 
-See <https://github.com/gofrontier-com/aws-terraform-modules/blob/main/README.rst#contributing>.
+See <https://github.com/frontierhq/aws-terraform-modules/blob/main/README.rst#contributing>.

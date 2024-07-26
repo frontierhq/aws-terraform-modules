@@ -6,7 +6,7 @@ This module creates an [EC2 Instance](https://registry.terraform.io/providers/ha
 
 ```hcl
 module "ec2_instance" {
-  source = "https://github.com/gofrontier-com/aws-terraform-modules/releases/download/ec2-instance/[VERSION]/module.tar.gz//src"
+  source = "https://github.com/frontierhq/aws-terraform-modules/releases/download/ec2-instance/[VERSION]/module.tar.gz//src"
 
   environment = var.environment
   identifier  = var.identifier
@@ -28,4 +28,4 @@ module "ec2_instance" {
 
 ## Contributing
 
-See <https://github.com/gofrontier-com/aws-terraform-modules/blob/main/README.rst#contributing>.
+See <https://github.com/frontierhq/aws-terraform-modules/blob/main/README.rst#contributing>.

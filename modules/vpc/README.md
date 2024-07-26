@@ -6,7 +6,7 @@ This module creates a [VPC](https://registry.terraform.io/providers/hashicorp/aw
 
 ```hcl
 module "vpc" {
-  source = "https://github.com/gofrontier-com/aws-terraform-modules/releases/download/vpc/[VERSION]/module.tar.gz//src"
+  source = "https://github.com/frontierhq/aws-terraform-modules/releases/download/vpc/[VERSION]/module.tar.gz//src"
 
   environment = var.environment
   identifier  = var.identifier
@@ -25,4 +25,4 @@ module "vpc" {
 
 ## Contributing
 
-See <https://github.com/gofrontier-com/aws-terraform-modules/blob/main/README.rst#contributing>.
+See <https://github.com/frontierhq/aws-terraform-modules/blob/main/README.rst#contributing>.

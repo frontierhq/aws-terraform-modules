@@ -6,7 +6,7 @@ This module creates a [Subnet](https://registry.terraform.io/providers/hashicorp
 
 ```hcl
 module "subnet" {
-  source = "https://github.com/gofrontier-com/aws-terraform-modules/releases/download/subnet/[VERSION]/module.tar.gz//src"
+  source = "https://github.com/frontierhq/aws-terraform-modules/releases/download/subnet/[VERSION]/module.tar.gz//src"
 
   environment = var.environment
   identifier  = var.identifier
@@ -28,4 +28,4 @@ module "subnet" {
 
 ## Contributing
 
-See <https://github.com/gofrontier-com/aws-terraform-modules/blob/main/README.rst#contributing>.
+See <https://github.com/frontierhq/aws-terraform-modules/blob/main/README.rst#contributing>.

@@ -6,7 +6,7 @@ This module creates a [DB Instance](https://registry.terraform.io/providers/hash
 
 ```hcl
 module "db_instance" {
-  source = "https://github.com/gofrontier-com/aws-terraform-modules/releases/download/db-instance/[VERSION]/module.tar.gz//src"
+  source = "https://github.com/frontierhq/aws-terraform-modules/releases/download/db-instance/[VERSION]/module.tar.gz//src"
 
   environment = var.environment
   identifier  = var.identifier
@@ -30,4 +30,4 @@ module "db_instance" {
 
 ## Contributing
 
-See <https://github.com/gofrontier-com/aws-terraform-modules/blob/main/README.rst#contributing>.
+See <https://github.com/frontierhq/aws-terraform-modules/blob/main/README.rst#contributing>.

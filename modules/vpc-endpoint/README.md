@@ -6,7 +6,7 @@ This module creates a [VPC Endpoint](https://registry.terraform.io/providers/has
 
 ```hcl
 module "vpc_endpoint" {
-  source = "https://github.com/gofrontier-com/aws-terraform-modules/releases/download/vpc-endpoint/[VERSION]/module.tar.gz//src"
+  source = "https://github.com/frontierhq/aws-terraform-modules/releases/download/vpc-endpoint/[VERSION]/module.tar.gz//src"
 
   environment = var.environment
   identifier  = var.identifier
@@ -27,4 +27,4 @@ module "vpc_endpoint" {
 
 ## Contributing
 
-See <https://github.com/gofrontier-com/aws-terraform-modules/blob/main/README.rst#contributing>.
+See <https://github.com/frontierhq/aws-terraform-modules/blob/main/README.rst#contributing>.

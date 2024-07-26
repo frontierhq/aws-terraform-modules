@@ -6,7 +6,7 @@ This module creates an [ECS Service](https://registry.terraform.io/providers/has
 
 ```hcl
 module "ecs_service" {
-  source = "https://github.com/gofrontier-com/aws-terraform-modules/releases/download/ecs-service/[VERSION]/module.tar.gz//src"
+  source = "https://github.com/frontierhq/aws-terraform-modules/releases/download/ecs-service/[VERSION]/module.tar.gz//src"
 
   environment = var.environment
   identifier  = var.identifier
@@ -27,4 +27,4 @@ module "ecs_service" {
 
 ## Contributing
 
-See <https://github.com/gofrontier-com/aws-terraform-modules/blob/main/README.rst#contributing>.
+See <https://github.com/frontierhq/aws-terraform-modules/blob/main/README.rst#contributing>.

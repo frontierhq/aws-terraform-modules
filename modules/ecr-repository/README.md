@@ -6,7 +6,7 @@ This module creates an [ECR Repository](https://registry.terraform.io/providers/
 
 ```hcl
 module "ecr_repository" {
-  source = "https://github.com/gofrontier-com/aws-terraform-modules/releases/download/ecr-repository/[VERSION]/module.tar.gz//src"
+  source = "https://github.com/frontierhq/aws-terraform-modules/releases/download/ecr-repository/[VERSION]/module.tar.gz//src"
 
   environment = var.environment
   identifier  = var.identifier
@@ -23,4 +23,4 @@ module "ecr_repository" {
 
 ## Contributing
 
-See <https://github.com/gofrontier-com/aws-terraform-modules/blob/main/README.rst#contributing>.
+See <https://github.com/frontierhq/aws-terraform-modules/blob/main/README.rst#contributing>.

@@ -6,7 +6,7 @@ This module creates an [App Autoscaling Policy](https://registry.terraform.io/pr
 
 ```hcl
 module "db_instance" {
-  source = "https://github.com/gofrontier-com/aws-terraform-modules/releases/download/app-autoscaling-policy/[VERSION]/module.tar.gz//src"
+  source = "https://github.com/frontierhq/aws-terraform-modules/releases/download/app-autoscaling-policy/[VERSION]/module.tar.gz//src"
 
   environment = var.environment
   identifier  = var.identifier
@@ -29,4 +29,4 @@ module "db_instance" {
 
 ## Contributing
 
-See <https://github.com/gofrontier-com/aws-terraform-modules/blob/main/README.rst#contributing>.
+See <https://github.com/frontierhq/aws-terraform-modules/blob/main/README.rst#contributing>.
