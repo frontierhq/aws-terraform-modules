@@ -3,7 +3,7 @@ variable "accessibility" {
 }
 
 variable "availability_zone" {
-  type = number
+  type = string
 }
 
 variable "cidr_block" {

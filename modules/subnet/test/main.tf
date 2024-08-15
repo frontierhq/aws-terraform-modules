@@ -10,7 +10,7 @@ module "subnet" {
   region      = "eu-west-2"
 
   accessibility     = "foo"
-  availability_zone = 2
+  availability_zone = "barbat"
   cidr_block        = "foobar"
   vpc_id            = "id"
 
