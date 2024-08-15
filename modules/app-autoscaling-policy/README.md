@@ -11,7 +11,6 @@ module "db_instance" {
   environment = var.environment
   identifier  = var.identifier
   region      = var.region
-  zone        = var.zone
 
   predefined_metric_type = "ECSServiceAverageCPUUtilization"
   resource_id            = module.ecs_scaling.resource_id

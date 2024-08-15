@@ -1,5 +1,5 @@
 resource "aws_security_group" "main" {
-  name        = "${var.zone}-${var.environment}-${lookup(local.short_regions, var.region)}-${local.identifier}-sg"
+  name        = "${local.identifier}-${var.environment}-${lookup(local.short_regions, var.region)}-sg"
   vpc_id      = var.vpc_id
   description = var.description
 
@@ -33,7 +33,7 @@ resource "aws_security_group" "main" {
 
   tags = merge(
     {
-      Name = "${var.zone}-${var.environment}-${lookup(local.short_regions, var.region)}-${local.identifier}-sg"
+      Name = "${local.identifier}-${var.environment}-${lookup(local.short_regions, var.region)}-sg"
     },
     var.tags
   )

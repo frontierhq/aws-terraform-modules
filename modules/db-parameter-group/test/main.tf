@@ -8,7 +8,6 @@ module "db_parameter_group" {
   environment = "bar"
   identifier  = "baz"
   region      = "eu-west-2"
-  zone        = "bat"
 
   description = "foo"
   engine      = "foobar"

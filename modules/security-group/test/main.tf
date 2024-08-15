@@ -8,7 +8,6 @@ module "security_group" {
   environment = "bar"
   identifier  = "baz"
   region      = "eu-west-2"
-  zone        = "bat"
 
   vpc_id      = "foo"
   description = "foobar"

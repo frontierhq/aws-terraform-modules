@@ -11,7 +11,6 @@ module "ecs_task_definition" {
   environment = var.environment
   identifier  = var.identifier
   region      = var.region
-  zone        = var.zone
 
   cpu                = 1024
   memory             = 2048

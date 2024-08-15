@@ -1,5 +1,5 @@
 resource "aws_db_instance" "main" {
-  identifier                   = "${var.zone}-${var.environment}-${local.identifier}-${lookup(local.db_engines, var.engine)}"
+  identifier                   = "${local.identifier}-${var.environment}-${lookup(local.db_engines, var.engine)}"
   db_name                      = var.db_name
   engine                       = var.engine
   engine_version               = var.engine_version
@@ -29,7 +29,7 @@ resource "aws_db_instance" "main" {
 
   tags = merge(
     {
-      Name = "${var.zone}-${var.environment}-${local.identifier}-${lookup(local.db_engines, var.engine)}-rds"
+      Name = "${local.identifier}-${var.environment}-${lookup(local.db_engines, var.engine)}-rds"
     },
     var.tags
   )

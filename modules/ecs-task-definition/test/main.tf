@@ -8,7 +8,6 @@ module "ecs_task_definition" {
   environment = "bar"
   identifier  = "baz"
   region      = "eu-west-2"
-  zone        = "bat"
 
   cpu                = 1
   memory             = 2

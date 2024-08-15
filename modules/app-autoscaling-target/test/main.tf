@@ -8,7 +8,6 @@ module "app_autoscaling_target" {
   environment = "bar"
   identifier  = "baz"
   region      = "eu-west-2"
-  zone        = "bat"
 
   max_capacity       = 1
   min_capacity       = 1

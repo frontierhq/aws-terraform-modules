@@ -11,7 +11,6 @@ module "app_autoscaling_target" {
   environment = var.environment
   identifier  = var.identifier
   region      = var.region
-  zone        = var.zone
 
   max_capacity       = 5
   min_capacity       = 1

@@ -153,7 +153,3 @@ variable "tags" {
 variable "username" {
   type = string
 }
-
-variable "zone" {
-  type = string
-}

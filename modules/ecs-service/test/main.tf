@@ -8,7 +8,6 @@ module "ecs_service" {
   environment = "bar"
   identifier  = "baz"
   region      = "eu-west-2"
-  zone        = "bat"
 
   cluster         = "foo"
   desired_count   = 1

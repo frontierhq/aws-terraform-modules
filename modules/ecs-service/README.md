@@ -11,7 +11,6 @@ module "ecs_service" {
   environment = var.environment
   identifier  = var.identifier
   region      = var.region
-  zone        = var.zone
 
   cluster         = aws_ecs_cluster.main.id
   desired_count   = 1

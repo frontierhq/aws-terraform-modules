@@ -8,7 +8,6 @@ module "app_autoscaling_policy" {
   environment = "bar"
   identifier  = "baz"
   region      = "eu-west-2"
-  zone        = "bat"
 
   service_namespace      = "foo"
   predefined_metric_type = "foobar"

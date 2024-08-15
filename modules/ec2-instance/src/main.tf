@@ -21,7 +21,7 @@ resource "aws_instance" "main" {
 
   tags = merge(
     {
-      Name = "${var.zone}-${var.environment}-${lookup(local.short_regions, var.region)}-${var.identifier}-ec2"
+      Name = "${var.identifier}-${var.environment}-${lookup(local.short_regions, var.region)}-ec2"
     },
   var.tags)
 }

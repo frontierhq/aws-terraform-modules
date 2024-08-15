@@ -1,5 +1,5 @@
 resource "aws_db_parameter_group" "main" {
-  name        = "${var.zone}-${var.environment}-${lookup(local.short_regions, var.region)}-${local.identifier}-${lookup(local.db_engines, var.engine)}"
+  name        = "${local.identifier}-${var.environment}-${lookup(local.short_regions, var.region)}-${lookup(local.db_engines, var.engine)}"
   description = var.description
   family      = var.family
 
@@ -13,7 +13,7 @@ resource "aws_db_parameter_group" "main" {
 
   tags = merge(
     {
-      Name = "${var.zone}-${var.environment}-${lookup(local.short_regions, var.region)}-${local.identifier}-${lookup(local.db_engines, var.engine)}"
+      Name = "${local.identifier}-${var.environment}-${lookup(local.short_regions, var.region)}-${lookup(local.db_engines, var.engine)}"
     },
     var.tags
   )

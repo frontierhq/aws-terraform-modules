@@ -32,7 +32,3 @@ variable "tags" {
   type    = map(string)
   default = {}
 }
-
-variable "zone" {
-  type = string
-}

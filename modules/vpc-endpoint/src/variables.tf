@@ -62,7 +62,3 @@ variable "vpc_endpoint_type" {
   type    = string
   default = "Gateway"
 }
-
-variable "zone" {
-  type = string
-}

@@ -11,7 +11,6 @@ module "vpc_endpoint" {
   environment = var.environment
   identifier  = var.identifier
   region      = var.region
-  zone        = var.zone
 
   route_table_ids = [aws_route_table.private.id]
   service_name    = "com.amazonaws.eu-west-2.s3"

@@ -6,7 +6,7 @@ resource "aws_nat_gateway" "main" {
 
   tags = merge(
     {
-      Name = "${var.zone}-${var.environment}-${lookup(local.short_regions, var.region)}-${local.identifier}-ngw"
+      Name = "${local.identifier}-${var.environment}-${lookup(local.short_regions, var.region)}-ngw"
     },
     var.tags
   )

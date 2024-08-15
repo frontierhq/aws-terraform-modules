@@ -8,7 +8,6 @@ module "db_instance" {
   environment = "bar"
   identifier  = "baz"
   region      = "eu-west-2"
-  zone        = "bat"
 
   kms_key_id              = "foo"
   backup_retention_period = 10

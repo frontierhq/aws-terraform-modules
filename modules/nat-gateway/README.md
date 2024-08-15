@@ -11,7 +11,6 @@ module "nat_gateway" {
   environment = var.environment
   identifier  = var.identifier
   region      = var.region
-  zone        = var.zone
 
   allocation_id = aws_eip.nat_gw_ip.id
   subnet_id     = module.public_subnet.id

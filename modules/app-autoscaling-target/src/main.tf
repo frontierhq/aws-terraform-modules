@@ -7,7 +7,7 @@ resource "aws_appautoscaling_target" "main" {
 
   tags = merge(
     {
-      Name = "${var.zone}-${var.environment}-${lookup(local.short_regions, var.region)}-${local.identifier}-scale"
+      Name = "${local.identifier}-${var.environment}-${lookup(local.short_regions, var.region)}-scale"
     },
   var.tags)
 }

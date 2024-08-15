@@ -11,7 +11,6 @@ module "ec2_instance" {
   environment = var.environment
   identifier  = var.identifier
   region      = var.region
-  zone        = var.zone
 
   ami                    = data.aws_ami.amazon_linux.id
   instance_type          = "t3a.small"

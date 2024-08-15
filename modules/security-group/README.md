@@ -11,7 +11,6 @@ module "security_group" {
   environment = var.environment
   identifier  = var.identifier
   region      = var.region
-  zone        = var.zone
 
   description = "Postgres Public Access"
   vpc_id      = module.vpc.id

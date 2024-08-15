@@ -1,5 +1,5 @@
 resource "aws_ecs_task_definition" "main" {
-  family                   = "${var.region}-${var.identifier}-task"
+  family                   = "${local.identifier}-${var.region}-task"
   network_mode             = var.network_mode
   requires_compatibilities = var.requires_compatibilities
   execution_role_arn       = var.execution_role_arn
@@ -11,7 +11,7 @@ resource "aws_ecs_task_definition" "main" {
 
   tags = merge(
     {
-      Name = "${var.zone}-${var.environment}-${local.identifier}-${lookup(local.short_regions, var.region)}-task"
+      Name = "${local.identifier}-${var.environment}-${lookup(local.short_regions, var.region)}-task"
     },
     var.tags
   )

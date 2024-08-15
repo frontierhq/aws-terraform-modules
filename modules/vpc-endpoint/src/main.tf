@@ -11,7 +11,7 @@ resource "aws_vpc_endpoint" "main" {
 
   tags = merge(
     {
-      Name = "${var.zone}-${var.environment}-${local.identifier}-${lookup(local.short_regions, var.region)}-vep"
+      Name = "${local.identifier}-${var.environment}-${lookup(local.short_regions, var.region)}-vep"
     },
     var.tags
   )

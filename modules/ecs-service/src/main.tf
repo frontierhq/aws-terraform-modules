@@ -1,5 +1,5 @@
 resource "aws_ecs_service" "main" {
-  name                       = "${var.zone}-${var.environment}-${lookup(local.short_regions, var.region)}-${var.identifier}-ecs"
+  name                       = "${local.identifier}-${var.environment}-${lookup(local.short_regions, var.region)}-ecs"
   cluster                    = var.cluster
   launch_type                = var.launch_type
   task_definition            = var.task_definition
@@ -53,7 +53,7 @@ resource "aws_ecs_service" "main" {
 
   tags = merge(
     {
-      Name = "${var.zone}-${var.environment}-${local.identifier}-${lookup(local.short_regions, var.region)}-ngw"
+      Name = "${local.identifier}-${var.environment}-${lookup(local.short_regions, var.region)}-ngw"
     },
     var.tags
   )

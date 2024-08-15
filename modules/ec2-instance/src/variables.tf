@@ -71,7 +71,3 @@ variable "vpc_security_group_ids" {
   type    = list(string)
   default = []
 }
-
-variable "zone" {
-  type = string
-}

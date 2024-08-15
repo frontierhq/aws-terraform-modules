@@ -39,7 +39,3 @@ variable "tags" {
 variable "target_value" {
   type = number
 }
-
-variable "zone" {
-  type = string
-}

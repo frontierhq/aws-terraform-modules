@@ -62,7 +62,3 @@ variable "task_role_arn" {
   type    = string
   default = null
 }
-
-variable "zone" {
-  type = string
-}

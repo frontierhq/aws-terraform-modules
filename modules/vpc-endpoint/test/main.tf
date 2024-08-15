@@ -8,7 +8,6 @@ module "vpc_endpoint" {
   environment = "bar"
   identifier  = "baz"
   region      = "eu-west-2"
-  zone        = "bat"
 
   service_name = "foo"
   vpc_id       = "id"
