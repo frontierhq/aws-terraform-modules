@@ -11,7 +11,6 @@ module "subnet" {
   environment = var.environment
   identifier  = var.identifier
   region      = var.region
-  zone        = var.zone
 
   accessibility     = "public"
   availability_zone = data.aws_availability_zones.available_zones.names[0]

@@ -8,7 +8,6 @@ module "subnet" {
   environment = "bar"
   identifier  = "baz"
   region      = "eu-west-2"
-  zone        = "bat"
 
   accessibility     = "foo"
   availability_zone = "barbat"

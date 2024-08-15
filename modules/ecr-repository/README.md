@@ -11,7 +11,6 @@ module "ecr_repository" {
   environment = var.environment
   identifier  = var.identifier
   region      = var.region
-  zone        = var.zone
 
   tags = {
     WorkloadType = "MortgagesLZ/ai-services"

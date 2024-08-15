@@ -1,5 +1,5 @@
 resource "aws_ecr_repository" "main" {
-  name                 = "${var.zone}-${var.environment}-${lookup(local.short_regions, var.region)}-${var.identifier}-ecr"
+  name                 = "${var.identifier}-${var.environment}-${lookup(local.short_regions, var.region)}-ecr"
   image_tag_mutability = var.image_tag_mutability
   force_delete         = var.force_delete
 
@@ -14,7 +14,7 @@ resource "aws_ecr_repository" "main" {
 
   tags = merge(
     {
-      Name = "${var.zone}-${var.environment}-${lookup(local.short_regions, var.region)}-${var.identifier}-ecr"
+      Name = "${var.identifier}-${var.environment}-${lookup(local.short_regions, var.region)}-ecr"
     },
   var.tags)
 }

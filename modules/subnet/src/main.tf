@@ -7,7 +7,7 @@ resource "aws_subnet" "main" {
 
   tags = merge(
     {
-      Name = "${var.zone}-${var.environment}-${local.identifier}-${replace(var.availability_zone, "-", "")}-${var.accessibility}"
+      Name = "${local.identifier}-${var.environment}-${replace(var.availability_zone, "-", "")}-${var.accessibility}"
     },
     var.tags
   )
