@@ -15,7 +15,7 @@ variable "listener_config" {
     name            = string
     port            = number
     protocol        = string
-    certificate_arn = optional(string)
+    certificate_arn = optional(string, null)
   }))
 }
 

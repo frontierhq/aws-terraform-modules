@@ -4,7 +4,7 @@ resource "aws_lb_listener" "main" {
   load_balancer_arn = var.aws_lb_arn
   port              = each.value.port
   protocol          = each.value.protocol
-  certificate_arn   = each.value.certificate_arn
+  certificate_arn   = each.value.certificate_arn != null ? each.value.certificate_arn : null
 
   default_action {
     type = "fixed-response"
