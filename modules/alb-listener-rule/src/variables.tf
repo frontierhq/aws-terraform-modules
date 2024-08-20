@@ -1,8 +1,8 @@
-variable "aws_lb_listener_listener_arns" {
+variable "listener_arns" {
   type = list(string)
 }
 
-variable "aws_lb_target_group_arns" {
+variable "target_group_arns" {
   type = list(string)
 }
 

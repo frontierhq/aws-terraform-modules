@@ -9,8 +9,8 @@ module "aws_lb_listener_rule" {
   identifier  = "baz"
   region      = "eu-west-2"
 
-  aws_lb_listener_listener_arns = ["FooListArn", "BarListArn"]
-  aws_lb_target_group_arns      = ["FooArn", "BarArn"]
+  listener_arns     = ["FooListArn", "BarListArn"]
+  target_group_arns = ["FooArn", "BarArn"]
 
   listener_rules_config = [
     {
