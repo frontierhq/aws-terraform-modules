@@ -1,9 +1,9 @@
 variable "listener_arns" {
-  type = list(string)
+  type = map(string)
 }
 
 variable "target_group_arns" {
-  type = list(string)
+  type = map(string)
 }
 
 variable "environment" {
