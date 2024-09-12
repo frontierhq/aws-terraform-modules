@@ -40,20 +40,20 @@ For example:
 
 .. code:: hcl
 
-        module "vpc" {
-            source = "https://github.com/frontierhq/aws-terraform-modules/releases/download/vpc/1.0.0/module.tar.gz//src"
+    module "vpc" {
+      source = "https://github.com/frontierhq/aws-terraform-modules/releases/download/vpc/1.0.0/module.tar.gz//src"
 
-            environment = "dev"
-            identifier  = "k8s"
-            region      = "eu-west-2"
-            zone        = "shd"
+      environment = "dev"
+      identifier  = "k8s"
+      region      = "eu-west-2"
+      zone        = "shd"
 
-            cidr_block = var.cidr_block
+      cidr_block = var.cidr_block
 
-            tags = {
-                WorkloadType = "CustomerBankingLZ/container-platform"
-            }
-        }
+      tags = {
+        WorkloadType = "CustomerBankingLZ/container-platform"
+      }
+    }
 
 See `Modules Overview <https://developer.hashicorp.com/terraform/language/modules>`_ for more information on Terraform Modules.
 
