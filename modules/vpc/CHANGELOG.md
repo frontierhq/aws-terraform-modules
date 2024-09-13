@@ -1,3 +1,5 @@
 # Changelog
-TF version update to 1.9.3
-Remove zone and edit naming convention
+## 2.0
+* TF version update to 1.9.3.
+* Naming convention changed.
+* `zone` variable removed.
