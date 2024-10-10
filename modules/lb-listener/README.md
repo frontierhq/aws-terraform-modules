@@ -1,4 +1,4 @@
-# Application Load Balancer
+# Load Balancer Listener
 
 This module creates an [Load Balancer Listener](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener).
 
@@ -6,7 +6,7 @@ This module creates an [Load Balancer Listener](https://registry.terraform.io/pr
 
 ```hcl
 module "aws_lb_listener" {
-  source = "https://github.com/frontierhq/aws-terraform-modules/releases/download/alb-listener/[VERSION]/module.tar.gz//src"
+  source = "https://github.com/frontierhq/aws-terraform-modules/releases/download/lb-listener/[VERSION]/module.tar.gz//src"
 
   load_balancer_arn = aws_lb.front_end.arn
   port              = "80"

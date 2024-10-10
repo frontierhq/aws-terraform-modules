@@ -1,9 +1,8 @@
-
 resource "aws_lb_target_group" "main" {
 
   for_each = { for lb_cfg in var.lb_target_config : lb_cfg.name => lb_cfg }
 
-  name                          = "${local.identifier}-${var.environment}-${lookup(local.short_regions, var.region)}-lb-tg"
+  name                          = "${local.identifier}-${var.environment}-${lookup(local.short_regions, var.region)}-tg"
   port                          = each.value.target_port
   protocol                      = each.value.target_protocol
   protocol_version              = each.value.protocol_version

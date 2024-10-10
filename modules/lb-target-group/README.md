@@ -1,4 +1,4 @@
-# Application Load Balancer
+# Load Balancer Target Group
 
 This module creates an [Load Balancer Target Group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_target_group).
 
@@ -6,7 +6,7 @@ This module creates an [Load Balancer Target Group](https://registry.terraform.i
 
 ```hcl
 module "aws_lb_target_group" {
-  source = "https://github.com/frontierhq/aws-terraform-modules/releases/download/alb-target-group/[VERSION]/module.tar.gz//src"
+  source = "https://github.com/frontierhq/aws-terraform-modules/releases/download/lb-target-group/[VERSION]/module.tar.gz//src"
 
   environment = var.environment
   identifier  = var.identifier
