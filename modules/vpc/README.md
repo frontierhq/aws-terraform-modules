@@ -11,7 +11,6 @@ module "vpc" {
   environment = var.environment
   identifier  = var.identifier
   region      = var.region
-  zone        = var.zone
 
   cidr_block = "10.10.10.0/24"
 
