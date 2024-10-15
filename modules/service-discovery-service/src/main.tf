@@ -10,10 +10,11 @@ resource "aws_service_discovery_service" "main" {
     }
   }
 
+  # Skip the block when the value is null
   dynamic "health_check_custom_config" {
-    for_each = try([var.health_check_custom_config], [])
+    for_each = var.health_check_custom_config != null ? [var.health_check_custom_config] : []
     content {
-      failure_threshold = try(health_check_custom_config.value.failure_threshold, null)
+      failure_threshold = health_check_custom_config.value.failure_threshold
     }
   }
 
