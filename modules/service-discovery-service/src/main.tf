@@ -19,7 +19,7 @@ resource "aws_service_discovery_service" "main" {
   }
 
   dynamic "health_check_config" {
-    for_each = var.health_check_config != {} ? [var.health_check_config] : []
+    for_each = length(var.health_check_config) > 0 ? [var.health_check_config] : []
     content {
       failure_threshold = try(health_check_config.value.failure_threshold, null)
       resource_path     = try(health_check_config.value.resource_path, null)
