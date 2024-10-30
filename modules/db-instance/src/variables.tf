@@ -84,7 +84,7 @@ variable "kms_key_id" {
 
 variable "maintenance_window" {
   type    = string
-  default = "sun:02:00-sun:03:00"
+  default = "sat:02:00-sat:03:00"
 }
 
 variable "manage_master_user_password" {
