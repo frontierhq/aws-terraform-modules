@@ -32,7 +32,7 @@ variable "lb_target_config" {
     target_type                      = string
     health_check_healthy_threshold   = optional(number)
     health_check_interval            = optional(number)
-    health_check_matcher             = optional(list(string))
+    health_check_matcher             = optional(string)
     health_check_path                = string
     health_check_port                = number
     health_check_protocol            = string
