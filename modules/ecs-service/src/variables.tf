@@ -16,6 +16,11 @@ variable "enable" {
   default = false
 }
 
+variable "enable_execute_command" {
+  type    = bool
+  default = false
+}
+
 variable "environment" {
   type = string
 }
