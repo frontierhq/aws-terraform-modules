@@ -1,6 +1,6 @@
 locals {
   db_engines = {
-    "mariadb"           = "mdb"
+    "mariadb"           = "mdbaaaa"
     "mysql"             = "mydb"
     "aurora-mysql"      = "amydb"
     "postgres"          = "pdb"
