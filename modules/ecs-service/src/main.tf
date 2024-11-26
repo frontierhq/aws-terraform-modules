@@ -1,6 +1,7 @@
 resource "aws_ecs_service" "main" {
   name                       = "${local.identifier}-${var.environment}-${lookup(local.short_regions, var.region)}-ecs"
   cluster                    = var.cluster
+  enable_execute_command     = var.enable_execute_command
   launch_type                = var.launch_type
   task_definition            = var.task_definition
   desired_count              = var.desired_count
