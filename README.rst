@@ -73,11 +73,11 @@ Modules
      - `1.0.0 <https://github.com/frontierhq/aws-terraform-modules/releases/tag/app-autoscaling-target%2F1.0.0>`__
      - ``https://github.com/frontierhq/aws-terraform-modules/releases/download/app-autoscaling-target/1.0.0/module.tar.gz//src``
    * - `db-instance <https://github.com/frontierhq/aws-terraform-modules/tree/main/modules/db-instance>`__
-     - `1.0.0 <https://github.com/frontierhq/aws-terraform-modules/releases/tag/db-instance%2F1.0.0>`__
-     - ``https://github.com/frontierhq/aws-terraform-modules/releases/download/db-instance/1.0.0/module.tar.gz//src``
+     - `1.1.10 <https://github.com/frontierhq/aws-terraform-modules/releases/tag/db-instance%2F1.1.10>`__
+     - ``https://github.com/frontierhq/aws-terraform-modules/releases/download/db-instance/1.1.10/module.tar.gz//src``
    * - `db-parameter-group <https://github.com/frontierhq/aws-terraform-modules/tree/main/modules/db-parameter-group>`__
-     - `1.0.0 <https://github.com/frontierhq/aws-terraform-modules/releases/tag/db-parameter-group%2F1.0.0>`__
-     - ``https://github.com/frontierhq/aws-terraform-modules/releases/download/db-parameter-group/1.0.0/module.tar.gz//src``
+     - `1.0.9 <https://github.com/frontierhq/aws-terraform-modules/releases/tag/db-parameter-group%2F1.0.9>`__
+     - ``https://github.com/frontierhq/aws-terraform-modules/releases/download/db-parameter-group/1.0.9/module.tar.gz//src``
    * - `ec2-instance <https://github.com/frontierhq/aws-terraform-modules/tree/main/modules/ec2-instance>`__
      - `1.0.0 <https://github.com/frontierhq/aws-terraform-modules/releases/tag/ec2-instance%2F1.0.0>`__
      - ``https://github.com/frontierhq/aws-terraform-modules/releases/download/ec2-instance/1.0.0/module.tar.gz//src``
@@ -85,11 +85,11 @@ Modules
      - `1.0.0 <https://github.com/frontierhq/aws-terraform-modules/releases/tag/ecr-repository%2F1.0.0>`__
      - ``https://github.com/frontierhq/aws-terraform-modules/releases/download/ecr-repository/1.0.0/module.tar.gz//src``
    * - `ecs-service <https://github.com/frontierhq/aws-terraform-modules/tree/main/modules/ecs-service>`__
-     - `1.0.0 <https://github.com/frontierhq/aws-terraform-modules/releases/tag/ecs-service%2F1.0.0>`__
-     - ``https://github.com/frontierhq/aws-terraform-modules/releases/download/ecs-service/1.0.0/module.tar.gz//src``
+     - `1.0.7 <https://github.com/frontierhq/aws-terraform-modules/releases/tag/ecs-service%2F1.0.7>`__
+     - ``https://github.com/frontierhq/aws-terraform-modules/releases/download/ecs-service/1.0.7/module.tar.gz//src``
    * - `ecs-task-definition <https://github.com/frontierhq/aws-terraform-modules/tree/main/modules/ecs-task-definition>`__
-     - `1.0.0 <https://github.com/frontierhq/aws-terraform-modules/releases/tag/ecs-task-definition%2F1.0.0>`__
-     - ``https://github.com/frontierhq/aws-terraform-modules/releases/download/ecs-task-definition/1.0.0/module.tar.gz//src``
+     - `1.0.13 <https://github.com/frontierhq/aws-terraform-modules/releases/tag/ecs-task-definition%2F1.0.13>`__
+     - ``https://github.com/frontierhq/aws-terraform-modules/releases/download/ecs-task-definition/1.0.13/module.tar.gz//src``
    * - `lb <https://github.com/frontierhq/aws-terraform-modules/tree/main/modules/lb>`__
      - `1.0.0 <https://github.com/frontierhq/aws-terraform-modules/releases/tag/lb%2F1.0.0>`__
      - ``https://github.com/frontierhq/aws-terraform-modules/releases/download/lb/1.0.0/module.tar.gz//src``
@@ -109,8 +109,8 @@ Modules
      - `1.0.0 <https://github.com/frontierhq/aws-terraform-modules/releases/tag/security-group%2F1.0.0>`__
      - ``https://github.com/frontierhq/aws-terraform-modules/releases/download/security-group/1.0.0/module.tar.gz//src``
    * - `service-discovery-service <https://github.com/frontierhq/aws-terraform-modules/tree/main/modules/service-discovery-service>`__
-     - `1.0.0 <https://github.com/frontierhq/aws-terraform-modules/releases/tag/service-discovery-service%2F1.0.0>`__
-     - ``https://github.com/frontierhq/aws-terraform-modules/releases/download/service-discovery-service/1.0.0/module.tar.gz//src``
+     - `1.0.14 <https://github.com/frontierhq/aws-terraform-modules/releases/tag/service-discovery-service%2F1.0.14>`__
+     - ``https://github.com/frontierhq/aws-terraform-modules/releases/download/service-discovery-service/1.0.14/module.tar.gz//src``
    * - `subnet <https://github.com/frontierhq/aws-terraform-modules/tree/main/modules/subnet>`__
      - `1.0.0 <https://github.com/frontierhq/aws-terraform-modules/releases/tag/subnet%2F1.0.0>`__
      - ``https://github.com/frontierhq/aws-terraform-modules/releases/download/subnet/1.0.0/module.tar.gz//src``
